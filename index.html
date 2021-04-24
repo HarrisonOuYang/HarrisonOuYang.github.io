@@ -303,6 +303,163 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/04/24/Python-Activity/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HEXO">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/04/24/Python-Activity/" itemprop="url">Python Activity</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-04-24T13:11:04+08:00">
+                2021-04-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python-Activity/" itemprop="url" rel="index">
+                    <span itemprop="name">Python Activity</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2021/04/24/Python-Activity/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2021/04/24/Python-Activity/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="In-the-recent-python-activity-held-in-TP-I-got-2-tasks-The-first-one-is-to-calculate-volumes-of-different-shapes-according-to-people’s-choice"><a href="#In-the-recent-python-activity-held-in-TP-I-got-2-tasks-The-first-one-is-to-calculate-volumes-of-different-shapes-according-to-people’s-choice" class="headerlink" title="In the recent python activity held in TP, I got 2 tasks. The first one is to calculate volumes of different shapes according to people’s choice."></a>In the recent python activity held in TP, I got 2 tasks. The first one is to calculate volumes of different shapes according to people’s choice.</h4><p>After one hour of struggling, I finally figured it out with the help of teacher.(I’m still a beginner (: ) And the program looks like this:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> math</span><br><span class="line"></span><br><span class="line">list_cube = []</span><br><span class="line">list_pyramid = []</span><br><span class="line">list_ellipsoid = []</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    command  = <span class="built_in">input</span>(<span class="string">&#x27;you may choose from “cube” or “c”, “pyramid” or “p”, “ellipsoid” or “e”, “quit” or “q’; to calculate the volumes of the shapes:&#x27;</span>)</span><br><span class="line">    <span class="keyword">if</span> command == <span class="string">&#x27;cube&#x27;</span> <span class="keyword">or</span> command == <span class="string">&#x27;c&#x27;</span>:</span><br><span class="line">        a = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&#x27;please input a positive number:&#x27;</span>))</span><br><span class="line">        volume_cube = a**<span class="number">3</span></span><br><span class="line">        list_cube.append(volume_cube)</span><br><span class="line">        print(volume_cube)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">elif</span> command == <span class="string">&#x27;pyramid&#x27;</span> <span class="keyword">or</span> command == <span class="string">&#x27;p&#x27;</span>:</span><br><span class="line">        b,h = <span class="built_in">input</span>(<span class="string">&#x27;please input its base b and height h:&#x27;</span>).split(<span class="string">&#x27;,&#x27;</span>)</span><br><span class="line">        volume_pyramid = (<span class="number">1</span>/<span class="number">3</span>) * (<span class="built_in">int</span>(b)**<span class="number">2</span> * <span class="built_in">int</span>(h))</span><br><span class="line">        list_pyramid.append(volume_pyramid)</span><br><span class="line">        print(volume_pyramid)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">elif</span> command == <span class="string">&#x27;ellipsoid&#x27;</span> <span class="keyword">or</span> command == <span class="string">&#x27;e&#x27;</span>:</span><br><span class="line">        r1,r2,r3 = <span class="built_in">input</span>(<span class="string">&#x27;please input three radii for the ellipsoid:&#x27;</span>).split(<span class="string">&#x27;,&#x27;</span>)</span><br><span class="line">        volume_ellipsoid = (<span class="number">4</span>/<span class="number">3</span>) * math.pi *<span class="built_in">int</span>(r1) *<span class="built_in">int</span>(r2) *<span class="built_in">int</span>(r3)</span><br><span class="line">        list_ellipsoid.append(volume_ellipsoid)</span><br><span class="line">        print(volume_ellipsoid) </span><br><span class="line">    </span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(<span class="string">&#x27;byebye&#x27;</span>)</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">list_cube.sort()</span><br><span class="line">list_pyramid.sort()</span><br><span class="line">list_ellipsoid.sort()</span><br><span class="line"><span class="built_in">print</span> (<span class="string">&#x27;you have reached the end of your session.&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span> (<span class="string">&#x27;the volumes calculated for each shapes are:&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span> (<span class="string">&#x27;cube:&#x27;</span>,list_cube )</span><br><span class="line">print(<span class="string">&#x27;pyramid:&#x27;</span>,list_pyramid)</span><br><span class="line">print(<span class="string">&#x27;ellipsoid:&#x27;</span>,list_ellipsoid)</span><br></pre></td></tr></table></figure>
+<p>As for the second task, I was asked to write a program to use the Monte Carlo method to calculate the area of any irregular shape. However, because I was still a rookie, my teacher eased the task and I only had to calculate pi using this method.</p>
+<p>The final result looks pretty simple, but took me a while to figure out):</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> random</span><br><span class="line"><span class="keyword">import</span> math</span><br><span class="line"><span class="keyword">import</span> tqdm</span><br><span class="line"></span><br><span class="line">count = <span class="number">0</span></span><br><span class="line">n = <span class="number">1000000</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span>  tqdm.trange(<span class="number">0</span>,n):</span><br><span class="line">    x = random.uniform(-<span class="number">0.5</span>,<span class="number">0.5</span>)</span><br><span class="line">    y = random.uniform(-<span class="number">0.5</span>,<span class="number">0.5</span>)</span><br><span class="line">    <span class="keyword">if</span> math.sqrt(x**<span class="number">2</span> + y**<span class="number">2</span>) &lt;= <span class="number">0.5</span>:</span><br><span class="line">        count += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">a = (count / n) *<span class="number">4</span></span><br><span class="line"><span class="built_in">print</span> (a)</span><br></pre></td></tr></table></figure>
+<p> It turns out that the atmosphere does helps with your study!</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://example.com/2021/04/22/Mathematics-contests/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1189,7 +1346,7 @@
                 <!-- <a href="/archives/%7C%7C%20archive"> -->
                 <a href="https://gitpagelearn.github.io/archives/" target="_Self">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -1200,7 +1357,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -1211,7 +1368,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
